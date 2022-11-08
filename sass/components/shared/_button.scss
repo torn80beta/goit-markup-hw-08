@@ -1,0 +1,18 @@
+.button {
+    text-align: center;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.subscription-button {
+     padding: 10px 32px;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: calc(30/16);
+     letter-spacing: 0.06em;
+     min-width: 216px;
+     border: 0;
+     border-radius: 4px;
+     transition: background-color 250ms $cubic-bezier-transition;
+    @include subscription-button();
+}

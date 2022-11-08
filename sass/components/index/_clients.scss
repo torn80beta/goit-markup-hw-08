@@ -1,0 +1,23 @@
+.clients__list {
+    display: flex;
+    justify-content: center;
+    gap: $card-set-gap;
+}
+
+.clients_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icons-fill-color;
+    border-radius: 4px;
+    fill: $icons-fill-color;
+
+    transition: border-color 250ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
+}

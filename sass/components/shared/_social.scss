@@ -1,0 +1,9 @@
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social__link {
+    @include social-link()
+}

@@ -1,0 +1,39 @@
+.command__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.command__bg {
+    background-color: $background-light-color;
+}
+
+.command__item + .command__item {
+    margin-left: $card-set-gap;
+}
+
+.card {
+    background-color: $primary-light-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: $command-card-shadow;
+}
+
+.card__content {
+    padding-top: $card-set-gap;
+    padding-bottom: $card-set-gap;
+}
+
+.card__person {
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 500;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: calc(19/16);
+}
+
+.social li + li {
+    margin-left: 10px;
+}

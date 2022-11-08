@@ -1,0 +1,71 @@
+@mixin logo($color: $accent-color,
+    $header-color: $black-color,
+    $footer-color: $primary-light-color) {
+
+        font-family: Raleway, sans-serif;
+        color: $color;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31/26);
+
+        .logo--black {
+            color: $header-color;
+        }
+
+        .logo--white {
+            color: $footer-color;
+        }
+}
+
+@mixin subscription-button($color: $primary-light-color,
+    $background-color: $accent-color,
+    $hover-focus-color: $background-accent-color) {
+
+        color: $color;
+        background-color: $background-color;
+
+        &:hover,
+        &:focus {
+            background-color: $hover-focus-color;
+        }
+}
+
+@mixin filter-button($color: $title-text-color,
+    $background-color: $background-light-color,
+    $hover-focus-color: $primary-light-color,
+    $hover-focus-background-color: $accent-color) {
+        
+        color: $color;
+        background-color: $background-color;
+
+        &:hover,
+        &:focus {
+            color: $hover-focus-color;
+            background-color: $hover-focus-background-color;
+            box-shadow: $button-shadow;
+        }
+    }
+
+@mixin social-link($fill-color: $icons-fill-color,
+    $background-color: $primary-light-color,
+    $hover-focus-fill-color: $primary-light-color,
+    $hover-focus-background-color: $accent-color) {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color 500ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
+            
+        background-color: $background-color;
+        fill: $fill-color;
+    
+        &:hover,
+        &:focus {
+            background-color: $hover-focus-background-color;
+            fill: $hover-focus-fill-color;
+        }
+}
