@@ -19,6 +19,18 @@
     <header class="header">
       <div class="container container--header">
         <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-label="кнопка мобільного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg width="24" height="16">
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation__container list">
             <li class="navigation__item">
@@ -54,13 +66,11 @@
     <main>
       <!-- Hero block-->
       <section class="hero">
-        <div class="hero__overlay">
-          <div class="container">
-            <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button subscription-button" type="button" data-modal-open>
-              Замовити послугу
-            </button>
-          </div>
+        <div class="container hero__container">
+          <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
+          <button class="button subscription-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -118,7 +128,7 @@
       </section>
 
       <!-- Specialization -->
-      <section class="section specialization">
+      <!--       <section class="section specialization">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="specialization__list list">
@@ -154,10 +164,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Command -->
-      <section class="section command command__bg">
+      <!--       <section class="section command command__bg">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="command__list list">
@@ -415,10 +425,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Clients -->
-      <section class="section clients">
+      <!--       <section class="section clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -466,11 +476,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!--     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a class="logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
@@ -572,10 +582,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <!--     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-button" data-modal-close>
           <svg width="30" height="30">
@@ -637,8 +647,94 @@
           <button class="button modal__button subscription-button" type="submit">Відправити</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-close-menu"
+        type="button"
+        aria-label="кнопка мобільного меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg width="19" height="19">
+          <use class="icon-close" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-navigation">
+        <ul class="mobile-navigation__container list">
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__wrapper">
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,10 +1,12 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './utils/mixins';
+@import './utils/placeholders';
 @import './utils/drops';
 @import './utils/body';
 @import './components/shared/logo';
 @import './components/shared/header';
+@import './components/shared/mobile-menu';
 @import './components/index/hero';
 @import './components/shared/button';
 @import './components/index/advantages';
