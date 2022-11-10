@@ -6,8 +6,16 @@
     padding: 118px 60px;
     background-image: linear-gradient(to right, $gradient-overlay-color, $gradient-overlay-color), url('../images/hero_img_480.jpg');
     background-position: center;
-    background-size: auto;
+    background-size: 480px 400px;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, $gradient-overlay-color, $gradient-overlay-color), url('../images/hero_img_480@2x.jpg');
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -26,6 +34,14 @@
     .hero {
         max-width: 768px;
         background-image: linear-gradient(to right, $gradient-overlay-color, $gradient-overlay-color), url('../images/hero_img_768.jpg');
+        background-size: 768px 400px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right, $gradient-overlay-color, $gradient-overlay-color), url('../images/hero_img_768@2x.jpg');
+        }
     }
 }
 
@@ -44,6 +60,13 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right, $gradient-overlay-color, $gradient-overlay-color), url('../images/hero_img@2x.jpg');
+        }
+    }
 }
 
 .hero__text {
@@ -52,19 +75,18 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-
     text-align: center;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42/26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-light-color;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
     .hero__text {
-        font-size: 26px;
-        line-height: calc(42/26);
+        font-size: 44px;
+        line-height: calc(60/44);
     }
 }
