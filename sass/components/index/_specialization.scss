@@ -1,11 +1,8 @@
-@media screen and (max-width: 1199px) {
-    .specialization {
-        display: none;
-    }
-}
-
 .specialization {
     padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .specialization__list {

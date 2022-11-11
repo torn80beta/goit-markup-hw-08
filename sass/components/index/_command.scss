@@ -1,21 +1,18 @@
 .command__list {
     display: flex;
     flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-    .command__list {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    justify-content: center;
+    /* margin-right: -$card-set-gap; */
+    margin-bottom: -30px;
 }
 
 .command__bg {
     background-color: $background-light-color;
 }
 
-.command__item + .command__item {
+.command__item {
     margin-left: $card-set-gap;
+    margin-bottom: 30px;
 }
 
 .card {
