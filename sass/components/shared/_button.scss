@@ -15,10 +15,8 @@
      border-radius: 4px;
      transition: background-color 250ms $cubic-bezier-transition;
     @include subscription-button();
-}
 
-@media screen and (max-width: 767px) {
-    .subscription-button {
+    @media screen and (max-width: 767px) {
         min-width: 200px;
         padding: 10px 16px;
     }

@@ -203,7 +203,17 @@
           <ul class="command__list list">
             <li class="command__item">
               <div class="card">
-                <img src="./images/igor_demiyanenko.jpg" alt="Ігор Дем'яненко" width="270" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/igor_demiyanenko_480.jpg 400w,
+                      ./images/igor_demiyanenko_768.jpg 768w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                  />
+                  <img src="./images/igor_demiyanenko_1200.jpg" alt="Ігор Дем'яненко" width="270" />
+                </picture>
                 <div class="card__content">
                   <h3 class="card__text card__person">Ігор Дем'яненко</h3>
                   <p class="card__text">Product Designer</p>
@@ -706,56 +716,36 @@
           </li>
         </ul>
       </nav>
-      <div class="mobile-menu__wrapper">
-        <ul class="mobile-contacts list">
-          <li class="mobile-contacts__item">
-            <a class="mobile-contacts__tel" href="tel:+380961111111"> +38 096 111 11 11</a>
-          </li>
-          <li class="mobile-contacts__item">
-            <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-social list">
-          <li class="mobile-social__item">
-            <a
-              class="mobile-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              class="mobile-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Twitter</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              class="mobile-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Facebook</a
-            >
-          </li>
-          <li class="mobile-social__item">
-            <a
-              class="mobile-social__link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social list">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
     </div>
 
     <script src="./js/modal.js"></script>

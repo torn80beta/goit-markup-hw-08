@@ -3,6 +3,13 @@
     flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+    .command__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
+
 .command__bg {
     background-color: $background-light-color;
 }
