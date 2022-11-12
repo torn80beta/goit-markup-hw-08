@@ -350,13 +350,6 @@ img {
   }
 }
 
-/* @media screen and (max-width: 480px) {
-    .container {
-        max-width: 480px;
-        max-height: 400px;
-    }
-}
- */
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -432,7 +425,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navigation {
-    margin-left: 88px;
+    margin-left: 93px;
   }
 }
 
