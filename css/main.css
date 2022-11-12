@@ -1027,8 +1027,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* margin-right: -$card-set-gap; */
   margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .command__list {
+    margin-right: -30px;
+  }
 }
 
 .command__bg {
@@ -1036,8 +1040,12 @@ img {
 }
 
 .command__item {
-  margin-left: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .command__item {
+    margin-right: 30px;
+  }
 }
 
 .card {

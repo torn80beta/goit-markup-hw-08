@@ -2,8 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-right: -$card-set-gap; */
     margin-bottom: -30px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: -$card-set-gap;
+    }
 }
 
 .command__bg {
@@ -11,8 +14,11 @@
 }
 
 .command__item {
-    margin-left: $card-set-gap;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+            margin-right: $card-set-gap;
+        }
 }
 
 .card {
