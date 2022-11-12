@@ -1165,7 +1165,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    /* align-items: flex-start; */
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1203,8 +1202,8 @@ img {
 }
 
 .footer__contacts {
-  margin-bottom: 60px;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 .footer__contacts ul li:not(:first-child) {
   margin-top: 9px;
@@ -1222,6 +1221,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-right: 93px;
+    margin-bottom: 0px;
     text-align: left;
   }
 }
@@ -1353,9 +1353,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscription__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
