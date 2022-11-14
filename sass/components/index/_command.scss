@@ -29,7 +29,11 @@
 
 .card__content {
     padding-top: $card-set-gap;
-    padding-bottom: $card-set-gap;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: $card-set-gap;
+    }
 }
 
 .card__person {
