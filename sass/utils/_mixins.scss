@@ -69,3 +69,48 @@
             fill: $hover-focus-fill-color;
         }
 }
+
+
+
+$imgdir: '../images/hero/';
+
+@mixin backgroundImageRetina($gradient: linear-gradient(getColor('gradient-hero'), getColor('gradient-hero')), $file, $bg-size: cover, $bg-position: center) {
+    background-image: $gradient,
+    url(#{$imgdir}#{$file} + '.' + jpg);
+    background-size: $bg-size;
+    background-position: $bg-position;
+    background-repeat: no-repeat;
+
+    @supports (background: url('../images/hero/hero_img.webp')) {
+        background-image: $gradient,
+        url(#{$imgdir}#{$file} + '.' + webp);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        & {
+            background-image: $gradient,
+            url(#{$imgdir}#{$file} + '2x.' + jpg);
+
+            @supports (background: url('../images/hero/hero_img.webp')) {
+                background-image: $gradient,
+                url(#{$imgdir}#{$file} + '2x.' + webp);
+            }
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        & {
+            background-image: $gradient,
+            url(#{$imgdir}#{$file} + '3x.' + img);
+
+            @supports (background: url('../images/hero/hero_img.webp')) {
+                background-image: $gradient,
+                url(#{$imgdir}#{$file} + '3x.' + webp);
+            }
+        }
+    }
+}
